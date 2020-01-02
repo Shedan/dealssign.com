@@ -3,7 +3,7 @@
     <div class="jumbotron">
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <div class="display-4 paralax-background"><img src="@/assets/deals.png" alt=""></div>
+        <div class="display-4 paralax-background"><img src="@/assets/deals.png" alt="" class="img-fluid"></div>
         <p></p>
         <div class="btn btn-primary btn-lg" href="#">СПРОБУВАТИ БЕЗКОШТОВНО</div>
       </div>
@@ -39,16 +39,40 @@
             <h1 class="text-center text-third">Deals допоможе Вам в електронному документообігу</h1>
         <div class="container">
           <div class="row">
+
               <div class="col text-center"><img src="@/static/icons/tab01.png" alt="" >
-              <div class="col text-center text-bg">Керівник</div></div>
+                  <div class="col text-center text-bg">Керівник</div>
+                      <div class="col"><p class="text-left">Економія витрат на друк і доставку документів</p></div>
+                        <div class="col"><p class="text-left">Надійне зберігання і доступ до документів 24/7</p></div>
+                          <div class="col"><p class="text-left">Механізм узгодження документів всередині компанії</p></div>
+              </div>
+
               <div class="col text-center"><img src="@/static/icons/tab05.png" alt="">
-              <div class="col text-center text-bg">Юрист</div></div>
+                <div class="col text-center text-bg">Юрист</div>
+                  <div class="col"><p class="text-left">Миттєвий обмін договорами, актами, листами з контрагентами</p></div>
+                  <div class="col"><p class="text-left">Он-лайн обговорення та узгодження текстів документів</p></div>
+                  <div class="col"><p class="text-left">Захищений архів юридично значущих документів компанії</p></div>
+              </div>
+
+
               <div class="col text-center"><img src="@/static/icons/tab02.png" alt="">
-              <div class="col text-center text-bg">Бухгалтер</div></div>
+                <div class="col text-center text-bg">Бухгалтер</div>
+                  <div class="col"><p class="text-left">Миттєвий обмін бухгалтерськими документами</p></div>
+                  <div class="col"><p class="text-left">Зручне зберігання, сортування і пошук бухгалтерських документів</p></div>
+                  <div class="col"><p class="text-left">Інтеграція з бухгалтерськими програмами по відправці і прийому документів</p></div>
+              </div>
+
               <div class="col text-center"><img src="@/static/icons/tab03.png" alt="">
-              <div class="col text-center text-bg">IT-директор</div></div>
+                <div class="col text-center text-bg">IT-директор</div>
+                  <div class="col"><p class="text-left">Електронний документообіг без установки програм на комп’ютери</p></div>
+                  <div class="col"><p class="text-left">Відсутність необхідності адмініструвати сервіс ЕДО</p></div>
+                  <div class="col"><p class="text-left">Зовнішній, надійний backup архіву електронних документів</p></div>
+              </div>
+
           </div>
         </div>
+
+
       </div>
       </section>
 </template>

@@ -23,12 +23,14 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/node_modules/bootstrap/dist/css/bootstrap.min.css'
+    '@/node_modules/bootstrap/dist/css/bootstrap.min.css',
+    '@/theme/index.scss'    
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+
   ],
   /*
   ** Nuxt.js dev-modules
@@ -39,7 +41,30 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-fontawesome',
+    //OR like this
+    ['nuxt-fontawesome', {
+      component: 'fa', 
+      imports: [
+        //import whole set
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        },
+        //import 2 icons from set 
+        // please note this is PRO set in this example, 
+        // you must have it in your node_modules to actually import
+        {
+          set: '@fortawesome/pro-regular-svg-icons',
+          icons: ['faAdjust', 'faArchive']
+        }
+      ]
+    }]
   ],
+  fontawesome: {
+    imports: [
+    ]
+  },
   /*
   ** Build configuration
   */

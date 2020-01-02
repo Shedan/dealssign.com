@@ -11,12 +11,22 @@
 
 <script>
 import Navbar from '@/components/Navbar'
-
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default {
-  components : {
+ 
+ components : {
     Navbar
-  }
+  },
+   computed: {
+      fas () {
+         return fas
+      },
+      faGithub () {
+         return faGithub
+      }
+    },
 }
 </script>
 
